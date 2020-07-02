@@ -1,0 +1,39 @@
+.description{
+    margin-bottom: -37px;
+    background-image: url(../img/description-bottom.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 2;
+    background-color: transparent;
+    position: relative;
+    &--inner{
+        background-image: none;
+        margin-bottom: 0;
+    }
+    &__prew{
+        background-color: #e1eef6;
+        background-image: url(../img/welcome.png), url(../img/to-the.png), url(../img/sedona-bg.png), url(../img/because.png), url(../img/sedona-text-5.png), url(../img/background-photo.jpg);
+        background-position: center 74px, center 110px, center 173px, center 254px, center bottom, center;
+        background-repeat: no-repeat;
+        background-size: 116px auto,  161px auto, 280px auto, 180px auto ,auto, cover;
+        height: 398px;
+        box-sizing: border-box;
+    }
+    &--inner &__prew{
+        height: 159px;
+        background-image: url(../img/sedona-bg.png),  url(../img/sedona-text-5.png), url(../img/background-photo.jpg);
+        background-position:center, center bottom, center;
+        background-size:  230px auto, auto, cover;
+    }
+    &__text-cont{
+        padding: 45px 20px 30px;
+        text-align: center;
+        .mein-text();
+
+    }
+    &__header{
+        .section-heading();
+    }
+
+}

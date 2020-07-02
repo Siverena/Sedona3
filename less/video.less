@@ -1,0 +1,110 @@
+.video{
+    width: 100%;
+    padding: 40px 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    
+    &__header{
+        .section-heading();
+        color: #000000;
+        padding: 0 20px;
+    }
+    &__par{
+        .mein-text();
+        color: #333333;
+        padding: 0 20px;
+        
+    }
+    &__player{
+        position: relative;
+
+
+    }
+}
+.player{
+    width: 100%;
+
+    &__prew{
+        width: 100%;
+    }
+    &__remote{
+        width: 100%;
+        padding: 0 20px;
+        position: absolute;
+        bottom: -67px;
+        height: 112px;
+    }
+    &__progress{
+        background-color: rgba(255,255,255, 0.2);
+        border: 20px solid rgba(0,0,0, 0.6);
+        height: 41px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__progress .circle{
+        border-radius: 50%;
+        width: 9px;
+        height: 9px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 20px;
+        cursor: pointer;
+    }
+    &__buttons{
+
+    }
+}
+@rest: #5c6870;
+@hover: #333333;
+@focus:rgba(92, 104, 112, 0.3);
+.buttons{
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        align-items: center;
+        padding: 22px 26px;
+        margin: 0;
+    }
+    &__item:first-of-type{
+        margin-right: auto;
+        margin-left: 0;
+    }
+    &__item{
+        margin-left: 31px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__item.replay path{
+        fill: @rest;
+    }    
+    &__item.subtites path{
+        fill: @rest;
+    }
+    &__item.fullscreen polygon{
+        fill:@rest;
+    }
+    &__item.replay:hover path{
+        fill: @hover;
+    }    
+    &__item.subtites:hover path{
+        fill: @hover;
+    }
+    &__item.fullscreen:hover polygon{
+        fill:@hover;
+    }
+    &__item.replay:active path{
+        fill: @focus;
+    }    
+    &__item.subtites:active path{
+        fill: @focus;
+    }
+    &__item.fullscreen:active polygon{
+        fill:@focus;
+    }
+}

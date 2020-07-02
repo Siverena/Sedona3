@@ -1,0 +1,138 @@
+.search{
+    width: 100%;
+    padding: 34px;
+    text-transform: uppercase;
+    font-family: Pt Sans;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+
+    &__header{
+        
+        font-size: 21px;
+        line-height: 26px;
+        font-family: Pt Sans Bold;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    &__button{
+        margin: 0 auto;
+        padding: 18px 47px;
+        color: #ffffff;
+        background-color: #766357;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: 'Pt Sans bold', sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        margin: 0 auto;
+        bottom: 0px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        border: none;
+    }
+    &__button:hover{
+        background-color: #604e43;
+    }
+    &__button:focus{
+        background-color: #503e33;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* модальные окна */
+
+.search-form {
+    font-family: 'Pt Sans bold', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 568px;
+    padding: 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    position: absolute;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .button{
+        font-family: 'Pt Sans bold', sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        color: #ffffff;
+        text-transform: uppercase;
+        max-width: 458px;
+        background-color: #81b3d2;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 0;
+        text-decoration: none;
+        &:hover{
+            background-color: #669ec0;
+        }
+        &:focus{
+            color: rgba(255, 255, 255, 0.3);
+            background-color: #5496bd;
+        }
+    }
+    &__row{
+        margin: 30px 0;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+    }
+    &__input{
+        background-color: #f2f2f2;
+        border: none;
+        max-width: 346px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 14px 40px 14px 14px;
+        margin-left: 28px;
+        text-transform: uppercase;
+    }
+    .search-row-3 {
+    flex-direction: column;
+    }
+    .search-row-3 input{
+        width: 114px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+    .search-row-3 .child{
+        margin-left: auto;
+    }
+}
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal-show {
+    display: block;
+    z-index: 2;
+    animation-name: bounce;
+    animation-duration: 3s;
+}
+
+
+/* модальные окна конец */
