@@ -47,14 +47,22 @@
             <form action="https://echo.htmlacademy.ru" class="review" method="POST">
                 <div class="review__item name">
                     <h3 class="review__header">Представьтесь:</h3>
-                    <label for="first-name" class="name__label">ИМЯ*:<input id="first-name" type="text" class="name__input"></label>
-                    <label for="last-name" class="name__label">ФАМИЛИЯ*:<input id="last-name" type="text" class="name__input"></label>
-                    <label for="second-name" class="name__label">Отчество:<input id="second-name" type="text" class="name__input"></label>
+                    <label for="first-name" class="name__label">ИМЯ*:<input name="name" id="first-name" type="text" class="name__input"></label>
+                    <label for="last-name" class="name__label">ФАМИЛИЯ*:<input name="last-name" id="last-name" type="text" class="name__input"></label>
+                    <label for="second-name" class="name__label">Отчество:<input name="second-name" id="second-name" type="text" class="name__input"></label>
                 </div>
                 <div class="review__item representation">
                     <h3 class="review__header">Контактная информация:</h3>
-                    <label for="phone" class="representation__label">Контактный телефон*:</label><input id="phone" type="text" class="representation__input" placeholder="Введите телефон">
-                    <label for="mail" class="representation__label">Электронная почта*:</label><input id="mail" type="text" class="representation__input" placeholder="Введите e-mail">
+                    <label for="phone" class="representation__label">Контактный телефон*:</label>
+
+                    <div class="representation__wrapper phone">
+                        <input name="phone" id="phone" type="text" class="representation__input" placeholder="Введите телефон">
+                    </div>
+
+                    <label for="mail" class="representation__label">Электронная почта*:</label>
+                    <div class="representation__wrapper mail">
+                        <input name="mail" id="mail" type="text" class="representation__input" placeholder="Введите e-mail">
+                    </div>
                 </div>
                 <div class="review__item impressions">
                     <h3 class="review__header">ВАше Общее впечатление:</h3>
@@ -75,10 +83,10 @@
                     <h3 class="review__header">посещенные достопримечательности:
                     </h3>
 
-                    <label class="sights__label" for="sight-1"><input class="sights__input visually-hidden" id="sight-1" value="bridge" type="checkbox"><span class="checkbox-indicator"></span>Мост Дьявола</label>
-                    <label class="sights__label" for="sight-2"><input class="sights__input visually-hidden" id="sight-2" value="mount" type="checkbox"><span class="checkbox-indicator"></span>Гора-Колокол</label>
-                    <label class="sights__label" for="sight-3"><input class="sights__input visually-hidden" id="sight-3" value="park" type="checkbox"><span class="checkbox-indicator"></span>Слайд-парк</label>
-                    <label class="sights__label" for="sight-4"><input class="sights__input visually-hidden" id="sight-4" value="rock" type="checkbox"><span class="checkbox-indicator"></span>Красные скалы</label>
+                    <label class="sights__label" for="sight-1"><input class="sights__input visually-hidden" id="sight-1" value="bridge" name="sight-1" type="checkbox"><span class="checkbox-indicator"></span>Мост Дьявола</label>
+                    <label class="sights__label" for="sight-2"><input class="sights__input visually-hidden" id="sight-2" value="mount" name="sight-2" type="checkbox"><span class="checkbox-indicator"></span>Гора-Колокол</label>
+                    <label class="sights__label" for="sight-3"><input class="sights__input visually-hidden" id="sight-3" value="park" name="sight-3" type="checkbox"><span class="checkbox-indicator"></span>Слайд-парк</label>
+                    <label class="sights__label" for="sight-4"><input class="sights__input visually-hidden" id="sight-4" value="rock" name="sight-4" type="checkbox"><span class="checkbox-indicator"></span>Красные скалы</label>
 
                 </div>
                 <div class="review__item emotion">

@@ -1,0 +1,143 @@
+/* hotels.html */
+.filters-section{
+    color: #ffffff;
+    background-color: #5496bd;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // padding: 30px 55px 7px;
+    padding: 20px;
+    width: 100%;
+}
+
+.filters{
+    // display: flex;
+    .main-text();
+    &__col{
+        display: flex;
+        flex-direction: column;
+        // width: 241px;
+        width: 100%;
+        // padding: 0 15px;
+        padding: 0;
+        align-items: flex-start;
+        margin: 0;
+        &--1{
+        }
+        &--2{
+            
+        }
+        &--3{
+            // margin-left: auto;
+            // width: 318px;
+        }
+    }
+    &__header{
+        .section-heading();
+        margin-bottom: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+    &__button{
+        font-family: 'Pt Sans bold', sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 12px 33px;
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 20px auto;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &__button:hover{
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+}
+
+.infrastructure{
+    &__label{
+        .main-text();
+        position: relative;
+        padding-left: 44px;
+        cursor: pointer;
+        margin-bottom: 23px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        line-height: 23px;
+    }
+    &__input+ &__indicator{
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 27px;
+        height: 23px;
+        background-image: url("../img/checkbox-off.svg");
+        background-repeat: no-repeat;
+    }
+    &__input:checked + &__indicator{
+        background-image: url("../img/checkbox-on.svg");
+    }
+
+}
+.type-of-housing{
+    &__label{
+        .main-text();
+        position: relative;
+        padding-left: 44px;
+        cursor: pointer;
+        margin-bottom: 23px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        line-height: 23px;
+    }
+    &__input+ &__indicator{
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 27px;
+        height: 23px;
+        background-image: url("../img/checkbox-off.svg");
+        background-repeat: no-repeat;
+    }
+    &__input:checked + &__indicator{
+        background-image: url("../img/checkbox-on.svg");
+    }
+
+}
+.cost-day{
+    .filters__header{
+        margin-bottom: 15px;
+    }
+    &__range-value{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border: 2px solid #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__range-value span{
+        text-align: center;
+        width: 50%;
+    }
+    &__from{
+        border-right: 2px solid #ffffff;
+    }
+    &__input{
+        margin: 10px 0;
+        width: 100%;
+    }
+
+}

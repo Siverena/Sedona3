@@ -1,0 +1,174 @@
+/* hotels */
+
+.sorting {
+    border-bottom: 1px solid #e5e5e5;
+    // display: flex;
+    // padding: 35px 73px;
+    padding: 20px;
+    align-items: center;
+    .main-text();
+    &__count{
+        .section-heading();
+        color: #000000;
+        width: 150px;
+        margin-right: 12px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+    }
+
+}
+.sorting-of-type{
+    // margin-left: 40px;
+    margin: 0;
+    padding: 0;
+
+    &__item{
+        margin-right: 10px;
+    }
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #cacaca;
+        line-height: 21px;
+        border-bottom: 1px dotted #81b3d2;
+        white-space: nowrap;
+    }
+    &__link:hover{
+        color: #81b3d2;
+    }
+    &__link:focus{
+        color: #000000;
+        border: none;
+    }
+    &__link.active{
+        color: #81b3d2;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+.list-arrow{
+    // margin-left: auto;
+    // width: 35px;
+    padding: 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+    &__item{
+        width: 11px;
+        height: 10px;
+        margin-left: 10px;
+    }
+    &__link{
+        display: flex;
+        width: 10px;
+        height: 11px;
+        white-space: nowrap;
+        align-items: center;
+        
+    }
+    &__link path{
+        fill: #cacaca;
+    }
+    &__link:hover path{
+        fill: #000000;
+    }
+    &__link.active, &__link:focus path{
+        fill: #81b3d2;
+    }
+}
+
+
+
+.result{
+    &__item{
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #ffffff;
+        // padding: 31px 72px;
+        padding: 20px;
+        display: flex;
+        text-transform: uppercase;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__image{
+        // margin-right: 30px;
+        
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        order: 3;
+        text-align: center;
+    }
+    &__type span{
+        display: inline-block;
+        // width: 110px;
+        margin-right: 6px;
+    }
+    &__button-wrapper{
+    display: flex;
+    }
+    &__button{
+        font-family: 'Pt Sans bold', sans-serif;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__button--info{
+        background-color: #81b3d2;
+        margin-right: 6px;
+    }
+    &__button--info:hover{
+        .blue-hover();
+    }
+    &__button--info:focus, &__button--info:active{
+        .blue-active();
+    }
+    &__button--reserv{
+        background-color: #766357;
+    }
+    &__button--reserv:hover{
+        background-color: #604e43;
+    }
+    &__button--reserv:focus, &__button--reserv:active{
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #503e33;
+    }
+    &__rating{
+        // margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        white-space: nowrap;
+        
+    }
+    &__stars{
+        background-image: url("../img/star.svg");
+        height: 17px;
+        width: 90px;
+        background-repeat: repeat-x;
+    }
+    &__count{
+        max-width: 111px;
+        .main-text();
+        box-sizing: border-box;
+        color: #666666;
+        background-color: #f2f2f2;
+        padding: 6px 12px;
+    }
+}
