@@ -26,7 +26,7 @@
 
 }
 .sorting-of-type{
-    // margin-left: 40px;
+   
     margin: 0;
     padding: 0;
 
@@ -56,8 +56,7 @@
 }
 
 .list-arrow{
-    // margin-left: auto;
-    // width: 35px;
+
     padding: 0;
     justify-content: space-between;
     box-sizing: border-box;
@@ -91,7 +90,7 @@
     &__item{
         border-bottom: 1px solid #e5e5e5;
         background-color: #ffffff;
-        // padding: 31px 72px;
+
         padding: 20px;
         display: flex;
         text-transform: uppercase;
@@ -99,7 +98,7 @@
         justify-content: space-between;
     }
     &__image{
-        // margin-right: 30px;
+        
         
     }
     &__description{
@@ -109,10 +108,10 @@
         width: 100%;
         order: 3;
         text-align: center;
+
     }
     &__type span{
         display: inline-block;
-        // width: 110px;
         margin-right: 6px;
     }
     &__button-wrapper{
@@ -149,7 +148,7 @@
         background-color: #503e33;
     }
     &__rating{
-        // margin-left: auto;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -170,5 +169,131 @@
         color: #666666;
         background-color: #f2f2f2;
         padding: 6px 12px;
+    }
+}
+@media (min-width: @tablet){
+/* hotels */
+    .sorting {
+    display: flex;
+    padding: 35px 73px;
+        &__count{
+        margin-right: 50px;
+        width: auto;
+        white-space: nowrap;
+        }
+        &__wrapper{
+
+        }
+        &__list{
+
+        }
+
+    }
+    .sorting-of-type{
+
+    margin-left: 40px;
+        &__item{
+
+        }
+        &__link{
+
+        }
+        &__link:hover{
+    
+        }
+        &__link:focus{
+
+        }
+        &__link.active{
+
+        }
+    }
+
+    .list-arrow{
+        margin-left: auto;
+        width: 35px;
+        &__item{
+
+        }
+        &__link{
+
+            
+        }
+        &__link path{
+    
+        }
+        &__link:hover path{
+
+        }
+        &__link.active, &__link:focus path{
+
+        }
+    }
+    .result{
+        &__item{
+            padding: 31px 72px;
+            flex-wrap: nowrap;
+            // height: 151px;
+            
+        }
+        &__image{
+            margin-right: 30px;
+            height: 100%;
+            
+        }
+
+        &__description{
+            order: 0;
+            width: auto;
+            text-align: left;
+            font-size: 14px;
+            font-family: "Pt Sans";
+            line-height: 14px;
+
+        }
+        &__header{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            font-family: "Pt Sans Bold";
+            line-height: 18px;
+        }
+        &__type span{
+            width: 110px;
+        }
+        &__button-wrapper{
+    
+        }
+        &__button{
+            padding: 8px 17px;
+        }
+        &__button--info{
+
+        }
+        &__button--info:hover{
+
+        }
+        &__button--info:focus, &__button--info:active{
+
+        }
+        &__button--reserv{
+
+        }
+        &__button--reserv:hover{
+
+        }
+        &__button--reserv:focus, &__button--reserv:active{
+
+        }
+        &__rating{
+
+            margin-left: auto;
+        }
+        &__stars{
+
+        }
+        &__count{
+
+        }
     }
 }

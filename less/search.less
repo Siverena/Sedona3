@@ -1,6 +1,8 @@
 .search{
     width: 100%;
-    padding: 34px;
+    // padding: 34px 34px 0 34px;
+    padding-top: 34px;
+
     text-align: center;
     box-sizing: border-box;
     position: relative;
@@ -11,9 +13,11 @@
         margin: 0;
         margin-bottom: 32px;
     }
+    &__container{
+        padding: 0 34px;
+    }
     &__button{
         margin: 0 auto;
-        
         padding: 18px 47px;
         color: #ffffff;
         background-color: #766357;
@@ -29,11 +33,16 @@
         box-sizing: border-box;
         white-space: nowrap;
         border: none;
+        max-width: 568px;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+
     }
     &__button:hover{
         background-color: #604e43;
     }
-    &__button:focus{
+    &__button:focus,&__button:active{
         background-color: #503e33;
         color: rgba(255, 255, 255, 0.3);
     }
@@ -60,13 +69,15 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    text-align: left;
     .button{
         font-family: 'Pt Sans bold', sans-serif;
         font-size: 14px;
         line-height: 26px;
         color: #ffffff;
         text-transform: uppercase;
-        max-width: 458px;
+        width: 100%;
+        // max-width: 458px;
         background-color: #81b3d2;
         border: none;
         display: flex;
@@ -74,12 +85,14 @@
         justify-content: center;
         padding: 17px 0;
         text-decoration: none;
+        outline: none;
         &:hover{
             background-color: #669ec0;
         }
-        &:focus{
+        &:focus,&:active{
             color: rgba(255, 255, 255, 0.3);
             background-color: #5496bd;
+            
         }
     }
     &__row{
@@ -87,27 +100,29 @@
         width: 100%;
         display: flex;
         box-sizing: border-box;
+        flex-direction: column;
+    }
+    &__row--3{
+        margin-top: 15px;
     }
     &__input{
         background-color: #f2f2f2;
         border: none;
-        max-width: 346px;
+        
         width: 100%;
         box-sizing: border-box;
         padding: 14px 40px 14px 14px;
-        margin-left: 28px;
+        
+        margin-top: 20px;
         text-transform: uppercase;
     }
-    .search-row-3 {
-    flex-direction: column;
+    &__row--3 &__label{
+        flex-direction: column;
+        display: flex;
+        
     }
-    .search-row-3 input{
-        width: 114px;
-        padding: 15px;
-        margin: 10px 0;
-    }
-    .search-row-3 .child{
-        margin-left: auto;
+    &__label--child{
+        margin-top: 15px;
     }
 }
 
@@ -131,3 +146,49 @@
 
 
 /* модальные окна конец */
+
+@media (min-width: @tablet){
+    .search{
+        &__header{
+            font-size: 30px;
+        }
+        &__button{
+            width: 568px;
+            margin-top: 48px;
+            text-transform: uppercase;
+        }
+    }
+
+    .search-form {
+        padding: 55px;
+        .button{
+            .main-text();
+            font-family: "Pt Sans Bold";
+
+        }
+        &__row{
+            flex-direction: row;
+            align-items: center;
+        }
+        &__input{
+            max-width: 346px;
+            margin: 0 0 0 28px;
+        }
+        &__row--3 {
+            flex-direction: row;
+
+        }
+        &__row--3 &__label{
+            flex-direction: row;
+            align-items: center;
+        }
+        &__row--3 &__input{
+            width: 114px;
+            margin: 0 0 0 28px;
+
+        }
+        &__label--child{
+            margin: 0 0 0 auto;
+        }
+    }
+}

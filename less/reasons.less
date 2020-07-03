@@ -1,5 +1,4 @@
 .reasons{
-
     // padding-top: 56px;
     &__list{
         margin: 0;
@@ -17,14 +16,11 @@
         list-style: none;
         padding: 0;
     }
-    
     &__item{
         text-align: center;
         .main-text();
         width: 100%;
     }
-
-
     &__item.type-1-block{
         background-color: #81b3d2;
         padding: 43px 20px 46px;
@@ -33,8 +29,7 @@
     }
     &__header{
         .section-heading();
-        margin: 43px 0 18px;
-        
+        margin: 43px 0 18px; 
     }
     &__number{
         margin: 18px 0 26px;
@@ -49,7 +44,6 @@
         background-size: 37px 37px;
         background-position: 20px 20px;
         background-color: #ffffff;
-
         h3{
             .section-heading();
             margin-bottom: 25px;
@@ -69,8 +63,6 @@
         box-sizing: border-box;
         background-color: #eeeeee;
         padding: 0 20px;
-
-
     }
     &__wrap-4 h3{
         margin: 0;
@@ -94,6 +86,67 @@
         width: 100%;
         padding: 0 40px;
         box-sizing: border-box;
+    }
+}
+
+@media (min-width: @tablet){
+
+    .reasons{
+        
+        &__row{
+            display: flex;
+            flex-direction: row;
+        }
+        &__item{
+            text-align: center;
+            .main-text();
+            width: 33%;
+            flex: none;
+            height: 256px;
+            text-align: center;
+        }
+        &__item.type-1-block{
+            padding: 43px 35px 46px;
+        }
+        &__image{
+            flex-grow: 1;
+            width: 66%;
+        }
+        &__header{
+            padding: 0 20px;
+            margin: 0 auto 16px;
+        }
+        &__number{
+
+        }
+        &__dop{
+            width: 33%;
+            text-align: center;
+            flex-grow: 1;
+            padding: 164px 45px 50px;
+            background-size: 75px 75px;
+            background-position: center 57px;
+            background-color: #ffffff;
+            height: 330px;
+            line-height: 21px;
+        }
+        &__dop h3{
+            margin: 0 0 30px;
+        }
+
+        &__wrap-4{
+        padding: 0;
+        }
+        &__wrap-4 &__header{
+            padding: 0 65px;
+            margin: 10px 0;
+        }
+        &__wrap-4 &__item{
+            flex-grow: 1;
+            width: 33%;
+            padding: 34px 20px;
+    
+        }
     }
 }
 

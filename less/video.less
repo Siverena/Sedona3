@@ -18,7 +18,8 @@
     }
     &__player{
         position: relative;
-
+        max-width: 800px;
+        margin: 0 auto;
 
     }
 }
@@ -29,20 +30,23 @@
         width: 100%;
     }
     &__remote{
-        width: 100%;
-        padding: 0 20px;
-        position: absolute;
-        bottom: -67px;
-        height: 112px;
+        // padding: 41px 20px 0;
+        position: relative;
+        top: -4px;
+        // height: 112px;
+        width: 90%;
+        margin: 0 auto;
     }
+
     &__progress{
         background-color: rgba(255,255,255, 0.2);
         border: 20px solid rgba(0,0,0, 0.6);
         height: 41px;
         width: 100%;
-        position: relative;
+        position: absolute;
         display: flex;
         align-items: center;
+        top: -41px;
     }
     &__progress .circle{
         border-radius: 50%;
@@ -52,9 +56,6 @@
         position: absolute;
         left: 20px;
         cursor: pointer;
-    }
-    &__buttons{
-
     }
 }
 @rest: #5c6870;
@@ -67,8 +68,9 @@
         justify-content: space-between;
         background-color: #f2f2f2;
         align-items: center;
-        padding: 22px 26px;
-        margin: 0;
+        // padding: 22px 26px;
+        padding: 22px 0;
+        // margin: 0;
     }
     &__item:first-of-type{
         margin-right: auto;
@@ -79,6 +81,12 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+    }
+    &__item.replay{
+        margin-left: 25px;
+    }
+    &__item.fullscreen{
+        margin-right: 25px;
     }
     &__item.replay path{
         fill: @rest;
@@ -106,5 +114,72 @@
     }
     &__item.fullscreen:active polygon{
         fill:@focus;
+    }
+}
+
+@media (min-width: @tablet){
+    .video{
+        padding: 60px;
+    }
+    @rest: #ffffff;
+    @hover: #c2c2c2;
+    @focus:rgba(255, 255, 255, 0.3);
+    .buttons{
+        &__list{
+            background-color: transparent;
+            height: 92px;
+        }
+        &__item.replay{
+            margin-right: 42px;
+        }
+        &__item.replay path{
+            fill: @rest;
+        }    
+        &__item.subtites path{
+            fill: @rest;
+        }
+        &__item.fullscreen polygon{
+            fill:@rest;
+        }
+        &__item.replay:hover path{
+            fill: @hover;
+        }    
+        &__item.subtites:hover path{
+            fill: @hover;
+        }
+        &__item.fullscreen:hover polygon{
+            fill:@hover;
+        }
+        &__item.replay:active path{
+            fill: @focus;
+        }    
+        &__item.subtites:active path{
+            fill: @focus;
+        }
+        &__item.fullscreen:active polygon{
+            fill: @focus;
+        }
+    }
+}
+
+@media (min-width: @desktop){
+    .buttons{
+        &__list{
+            background-color: transparent;
+            height: 92px;
+        }
+        &__item.replay{
+            margin-right: 42px;
+        }
+
+        &__item.replay:active path{
+            fill: @focus;
+        }    
+        &__item.subtites:active path{
+            fill: @focus;
+        }
+        &__item.fullscreen:active polygon{
+            fill: @focus;
+        }
     }
 }

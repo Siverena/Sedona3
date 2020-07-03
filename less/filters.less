@@ -1,4 +1,3 @@
-/* hotels.html */
 .filters-section{
     color: #ffffff;
     background-color: #5496bd;
@@ -140,4 +139,20 @@
         width: 100%;
     }
 
+}
+@media (min-width: @tablet){
+    .filters-section{
+        padding: 30px 55px 7px;
+    }
+    .filters{
+        display: flex;
+        &__col{
+            width: 33%;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        &__header{
+            margin: 20px 0;
+        }
+    }
 }
