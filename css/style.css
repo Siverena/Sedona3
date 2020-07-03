@@ -385,7 +385,7 @@ main {
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-  background-position: 20px 20px;
+  background-position: 20px 40px;
   background-color: #ffffff;
 }
 .reasons__dop h3 {
@@ -503,6 +503,22 @@ main {
     flex-grow: 1;
     width: 33%;
     padding: 34px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .reasons__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
   }
 }
 .search {
