@@ -1,3 +1,6 @@
+@rest: #5c6870;
+@hover: #333333;
+@focus:rgba(92, 104, 112, 0.3);
 .video{
     width: 100%;
     padding: 40px 0;
@@ -58,9 +61,7 @@
         cursor: pointer;
     }
 }
-@rest: #5c6870;
-@hover: #333333;
-@focus:rgba(92, 104, 112, 0.3);
+
 .buttons{
     &__list{
         list-style: none;
@@ -118,12 +119,29 @@
 }
 
 @media (min-width: @tablet){
+    
     .video{
         padding: 60px;
     }
     @rest: #ffffff;
     @hover: #c2c2c2;
     @focus:rgba(255, 255, 255, 0.3);
+    .player{
+        &__remote{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            top: auto;
+            background-color: rgba(0,0,0, 0.6);
+        }
+        &__progress{
+            position: relative;
+            top: auto;
+            height: 4px;
+            border: none;
+            background-color: rgba(255,255,255, 0.2);
+        }
+    }
     .buttons{
         &__list{
             background-color: transparent;
@@ -162,24 +180,23 @@
     }
 }
 
-@media (min-width: @desktop){
-    .buttons{
-        &__list{
-            background-color: transparent;
-            height: 92px;
-        }
-        &__item.replay{
-            margin-right: 42px;
-        }
+// @media (min-width: @desktop){
+//     .buttons{
+//         &__list{
 
-        &__item.replay:active path{
-            fill: @focus;
-        }    
-        &__item.subtites:active path{
-            fill: @focus;
-        }
-        &__item.fullscreen:active polygon{
-            fill: @focus;
-        }
-    }
-}
+//         }
+//         &__item.replay{
+
+//         }
+
+//         &__item.replay:active path{
+//             fill: @focus;
+//         }    
+//         &__item.subtites:active path{
+//             fill: @focus;
+//         }
+//         &__item.fullscreen:active polygon{
+//             fill: @focus;
+//         }
+//     }
+// }
